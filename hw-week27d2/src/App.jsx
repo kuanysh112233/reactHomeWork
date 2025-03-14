@@ -1,33 +1,36 @@
 import { useState } from 'react'
 import './App.css'
+import UseEfett from './companett/UseEfett'
 
 export default function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isRegistering, setIsRegistering] = useState(false);
-  const [emailOrPhone, setEmailOrPhone] = useState('');
-  const [password, setPassword] = useState('');
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [isRegistering, setIsRegistering] = useState(false);
+  // const [emailOrPhone, setEmailOrPhone] = useState('');
+  // const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
+  // const handleLogin = () => {
+  //   setIsLoggedIn(true);
+  // };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
+  // const handleLogout = () => {
+  //   setIsLoggedIn(false);
+  // };
 
-  const handleRegister = () => {
-    setIsRegistering(true);
-  };
+  // const handleRegister = () => {
+  //   setIsRegistering(true);
+  // };
 
-  const handleSubmitRegister = (e) => {
-    e.preventDefault();
-    setIsRegistering(false);
-  };
+  // const handleSubmitRegister = (e) => {
+  //   e.preventDefault();
+  //   setIsRegistering(false);
+  // };
 
 
   return (
     <>
-    <div className="app-container">
+    <UseEfett/>
+
+    {/* <div className="app-container">
       {!isLoggedIn ? (
         <>
           <h1>Жүйеге кіру қажет</h1>
@@ -63,7 +66,7 @@ export default function App() {
           <button className="logout-button" onClick={handleLogout}>Log out</button>
         </>
       )}
-    </div>
+    </div> */}
     </>
   )
 }
