@@ -1,6 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function MyProjects() {
+  const navi = useNavigate()
+    const hanClick = () =>{
+      navi("/about")
+    }
   return (
     <div>
       <h1>Мои Проекты</h1>
@@ -14,6 +19,7 @@ export default function MyProjects() {
           <p>2 Проекты</p>
         </li>
       </ul>
+      <button onClick={hanClick}>My Profile</button>
     </div>
   )
 }

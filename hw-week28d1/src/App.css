@@ -5,6 +5,26 @@
   text-align: center;
 }
 
+li{
+  list-style:none;
+}
+
+a,h1,p{
+  color: grey;
+}
+
+p:hover{
+  color: rgb(164, 163, 163);
+}
+h1:hover{
+  color: rgb(164, 163, 163);
+}
+a:hover{
+  color: rgb(164, 163, 163);
+}
+
+
+
 .logo {
   height: 6em;
   padding: 1.5em;

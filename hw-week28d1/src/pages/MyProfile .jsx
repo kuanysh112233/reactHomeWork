@@ -1,6 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function MyProfile () {
+  const navi = useNavigate()
+  const hanClick = () =>{
+    navi("/projects")
+  }
   return (
     <div>
       <h1>Мой Данные</h1>
@@ -8,6 +13,7 @@ export default function MyProfile () {
       <p>Имя: Төкен Қуаныш Амангелдіұлы </p>
       <p>Email: tkuanys767@gmail.com</p>
       <p>Академия:Amjil Cyber School</p>
+      <button onClick={hanClick}>About Me</button>
 
     </div>
   )
